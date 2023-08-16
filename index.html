@@ -19,18 +19,7 @@
                      charset="utf-8"
                      src="https://yandex.ru/ads/system/adsdk.js"
                 ></script>
-            </head>
-        </html>
-    </script>
-    <script>
-        <html xmlns="http://www.w3.org/1999/xhtml">
-            <head>
-                <script
-                     type="text/javascript"
-                     charset="utf-8"
-                     src="https://yandex.ru/ads/system/adsdk.js"
-                ></script>
-                 <script>
+                <script>
                         ya.videoAd.play({
                         // Видеоэлемент
                         videoSlot: document.querySelector('#video'),
@@ -39,11 +28,15 @@
                         slot: document.querySelector('#adfox_1'),
                         // Конфиг загрузки и конфиг проигрывания рекламы.
                         config: adFoxParameters,
-                    });
+                    }):Promise <
+                       reject: (ошибка загрузки рекламы)
+                       resolve: (окончание рекламы)
+                     >;
                  </script>
             </head>
         </html>
     </script>
+    
 </head>
 <body>
 <!--AdFox START-->
