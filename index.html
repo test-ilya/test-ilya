@@ -11,6 +11,39 @@
     <title>Document</title>
     <script async src='https://yandex.ru/ads/system/header-bidding.js'></script>
     <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+    <script> 
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <script
+                     type="text/javascript"
+                     charset="utf-8"
+                     src="https://yandex.ru/ads/system/adsdk.js"
+                ></script>
+            </head>
+        </html>
+    </script>
+    <script>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <script
+                     type="text/javascript"
+                     charset="utf-8"
+                     src="https://yandex.ru/ads/system/adsdk.js"
+                ></script>
+                 <script>
+                        ya.videoAd.play({
+                        // Видеоэлемент
+                        videoSlot: document.querySelector('#video'),
+                        // Элемент для показа контролов. Элемент не должен быть статически позиционирован.
+                        // Можно использовать родительский элемент видео.
+                        slot: document.querySelector('#videoParent'),
+                        // Конфиг загрузки и конфиг проигрывания рекламы.
+                        config: adFoxParameters,
+                    });
+                 </script>
+            </head>
+        </html>
+    </script>
 </head>
 <body>
 <!--AdFox START-->
@@ -19,23 +52,23 @@
 <!--Категория: <не задана>-->
 <!--Баннер: <не задана>-->
 <!--Тип баннера: 640х1000-->
-<div id="adfox_169217035682398618"></div>
+<video id="adfox_1"></video>
 <script>
-    window.yaContextCb.push(()=>{
-        Ya.adfoxCode.create({
-            ownerId: 1456522,
-            containerId: 'adfox_169217035682398618',
-            params: {
-                p1: 'cyexv',
-                p2: 'ijib',
-                pfc: 'flhjz',
-                pfb: 'qlsjz',
-                puid1: ''
-            }
-        })
-    })
+    var adFoxParameters = {
+    adFoxParameters: {
+        ownerId: 1456522,
+        // ID родительского контейнера тега <video></video>
+        containerId: 'adfox_1',
+        // Параметры Adfox
+        params: {
+            p1: 'cyqlb',
+            p2: 'hiuy',
+            pfc: 'flhjz',
+            pfb: 'qlsnh'
+        },
+    }
+}
 </script>
-
 
 
 <div>
