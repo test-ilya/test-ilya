@@ -34,7 +34,7 @@ li {
 
 #side_left {
     position: relative;
-    height: 1000px;
+    min-height: 700px;
     width: 300px;
     border: solid 1px gray;
     margin: 50px 0 0 20px;
