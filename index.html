@@ -6,7 +6,35 @@
     <!--В <head> сайта один раз добавьте код загрузчика-->
     <script>window.yaContextCb = window.yaContextCb || []</script>
     <script src="https://yandex.ru/ads/system/context.js" async></script>
+    <script async src='https://yandex.ru/ads/system/header-bidding.js'></script>
+<script>
+var adfoxBiddersMap = {
+  "adfox_imho-video": "2902343"
+};
 
+var adUnits = [
+  {
+    "code": "adfox_170081059997424072",
+    "bids": [
+      {
+        "bidder": "adfox_imho-video",
+        "params": {
+          "p1": "czihx",
+          "p2": "hiub"
+        }
+      }
+    ]
+  }
+];
+
+var userTimeout = 500;
+
+window.YaHeaderBiddingSettings = {
+   biddersMap: adfoxBiddersMap,
+   adUnits: adUnits,
+   timeout: userTimeout,
+};
+</script>
     <link rel="stylesheet" href="css/style.css">
     <title>Hello</title>
 </head>
